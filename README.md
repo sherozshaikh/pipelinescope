@@ -420,8 +420,12 @@ Contributions welcome! Please:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/your-feature`)
 3. Make your changes and add tests
-4. Run test suite: `pytest --cov=pipelinescope`
-5. Ensure code formatting: `black src/ tests/` and `ruff check src/ tests/`
+4. Run the test suite: `pytest --cov=pipelinescope`
+5. Ensure code formatting and linting:
+   isort .
+   black .
+   ruff check --fix .
+   ruff format .
 6. Submit a pull request
 
 ---
